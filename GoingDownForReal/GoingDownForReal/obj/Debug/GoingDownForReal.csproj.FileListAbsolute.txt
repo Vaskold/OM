@@ -1,0 +1,12 @@
+c:\users\vaskold\documents\visual studio 2015\Projects\GoingDownForReal\GoingDownForReal\bin\Debug\GoingDownForReal.exe.config
+c:\users\vaskold\documents\visual studio 2015\Projects\GoingDownForReal\GoingDownForReal\obj\Debug\GoingDownForReal.csprojResolveAssemblyReference.cache
+c:\users\vaskold\documents\visual studio 2015\Projects\GoingDownForReal\GoingDownForReal\bin\Debug\GoingDownForReal.exe
+c:\users\vaskold\documents\visual studio 2015\Projects\GoingDownForReal\GoingDownForReal\bin\Debug\GoingDownForReal.pdb
+c:\users\vaskold\documents\visual studio 2015\Projects\GoingDownForReal\GoingDownForReal\obj\Debug\GoingDownForReal.exe
+c:\users\vaskold\documents\visual studio 2015\Projects\GoingDownForReal\GoingDownForReal\obj\Debug\GoingDownForReal.pdb
+C:\Users\Vaskold\Desktop\GoingDownForReal\GoingDownForReal\bin\Debug\GoingDownForReal.exe.config
+C:\Users\Vaskold\Desktop\GoingDownForReal\GoingDownForReal\bin\Debug\GoingDownForReal.exe
+C:\Users\Vaskold\Desktop\GoingDownForReal\GoingDownForReal\bin\Debug\GoingDownForReal.pdb
+C:\Users\Vaskold\Desktop\GoingDownForReal\GoingDownForReal\obj\Debug\GoingDownForReal.csprojResolveAssemblyReference.cache
+C:\Users\Vaskold\Desktop\GoingDownForReal\GoingDownForReal\obj\Debug\GoingDownForReal.exe
+C:\Users\Vaskold\Desktop\GoingDownForReal\GoingDownForReal\obj\Debug\GoingDownForReal.pdb
