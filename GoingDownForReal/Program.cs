@@ -66,14 +66,6 @@ namespace GoingDownForReal
                 7 * Math.Pow(xk.X2 - x * grad.X2, 2) +
                 (xk.X1 - x * grad.X1) * (xk.X2 - x * grad.X2) +
                 (xk.X1 - x * grad.X1);
-
-            /*
-       return 
-            6 * (-1) * grad.x1 * (xk.x1 - x * grad.x1) + 
-            2 * (-1) * grad.x2 * (xk.x2 - x * grad.x2) - 
-            ((-1) * grad.x1 * (xk.x2 - x * grad.x2) + (-1) * grad.x2 * (xk.x1 - x * grad.x1)) - 
-            4 * (-1) * grad.x1;
-            */
         }
 
         private static Vector Grad(Vector xk) // return grad(f(xk))
