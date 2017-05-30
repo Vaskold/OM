@@ -117,6 +117,11 @@ namespace GoingDownForReal
             return Math.Sqrt(Math.Pow(x.X1, 2) + Math.Pow(x.X2, 2));
         }
 
+        private static double Sqr(Vector x)
+        {
+            return Math.Pow(x.X1, 2) + Math.Pow(x.X2, 2);
+        }
+
         private static void Main()
         {
             var a = new double[2][];
@@ -125,11 +130,19 @@ namespace GoingDownForReal
 
             const double e1 = 0.01;
             const double e2 = 0.01;
-            Vector x0;
+
             int i = 1, cond = 0;
             //bool cond = true;
+
+            Vector x0;
             x0.X1 = -1.1;
             x0.X2 = 1.1;
+
+            var f0 = F(x0);
+            var f1 = f0;
+            var p = -1 * Grad(x0);
+            var gradSqr = Sqr(p);
+
             Fill(a, 0.519, -0.037, -0.037, 0.074);
 
             while (Norma(Grad(x0)) > e1) // && cond < 2)
@@ -146,9 +159,15 @@ namespace GoingDownForReal
 
                 //Console.WriteLine("a{1} = {0}", Gs(x0, Grad(x0)), i - 2); show alpha
 
-                // xk = x0 - Gs(x0, Grad(x0)) * Grad(x0); fastest descent
+                //var xk = x0 - Gs(x0, Grad(x0)) * Grad(x0);
 
-                var xk = x0 - Mul(a, Grad(x0));
+                var xk = x0 + Gs(x0, Grad(x0)) * p;
+                var newGrad = -1 * Grad(xk);
+                var newGradScr = Sqr(newGrad);
+                var b = newGradScr / gradSqr;
+                p = newGrad + b * p;
+
+                //var xk = x0 - Mul(a, Grad(x0));
 
                 Console.WriteLine("f(x{0}) = {1}", i - 1, F(xk));
 
@@ -164,6 +183,9 @@ namespace GoingDownForReal
                 }
 
                 x0 = xk;
+                f0 = f1;
+                f1 = F(xk);
+                gradSqr = newGradScr;
             }
 
             Console.ReadKey();
